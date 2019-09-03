@@ -30,7 +30,7 @@
    答案：
 
    ```
-   
+   42
    ```
 
 3. 有一个通过网络获取数据的Python函数（可能会因为网络或其他原因出现异常），写一个装饰器让这个函数在出现异常时可以重新执行，但尝试重新执行的次数不得超过指定的最大次数。
@@ -60,7 +60,9 @@
    答案：
 
    ```Python
-   
+    prices1 = {v: k for k, v in prices.items()}
+    print(prices1[max([k for k in prices1])])
+    print({k: v for k, v in prices.items() if v > 100})
    ```
 
 5. 用生成式实现矩阵的转置操作。例如，用`[[1, 2], [3, 4], [5, 6]`表示矩阵$\begin{bmatrix}1 & 2\\\\3 &4\\\\5 & 6\end{bmatrix}$，写一个生成式将其转换成`[[1, 3, 5], [2, 4, 6]]`即$\begin{bmatrix}1 & 3 & 5\\\\2 & 4 & 6\end{bmatrix}$。
