@@ -13,9 +13,9 @@
    答案：
 
    ```
-   [(a, 1), (b, 2), (c, 3), (d, 4)]
-   {0, 4, 16}
-   9
+   [('a', 1), ('b', 2), ('c', 3), ('d', 4)]
+   {1: 'item1', 3: 'item9'}
+   6
    ```
 
 2. 下面的Python代码会输出什么。
@@ -149,7 +149,11 @@
     答案：
 
     ```
-    
+    User-Agent
+    referer
+    accept
+    origin
+    content-type
     ```
 
 12. 阐述JSON Web Token的工作原理和优点。
