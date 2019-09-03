@@ -60,8 +60,7 @@
    答案：
 
    ```Python
-    prices1 = {v: k for k, v in prices.items()}
-    print(prices1[max([k for k in prices1])])
+    print(max(zip((v for v in prices.values()), (k for k in prices)))[1])
     print({k: v for k, v in prices.items() if v > 100})
    ```
 
